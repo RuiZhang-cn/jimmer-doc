@@ -83,7 +83,8 @@ pubic class BookRepository {
                 name != null && !name.isEmpty(),
                 table.name().ilike(name)
             )
-            .select(table);
+            .select(table)
+            .execute();
     }
 }
 ```
